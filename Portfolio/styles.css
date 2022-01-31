@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Oswald:wght@300;700&family=Playfair+Display+SC:wght@400;700&family=Roboto:ital,wght@0,900;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+*,*::before,*::after{
+    box-sizing: border-box;
+
+}
+/* General */
+
+body{
+    color: rgb(41, 43, 150);
+    font-family: 'Oswald', sans-serif; 
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+.list-appearance{
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+
+}
+.btn{
+    border-radius: 15px;
+    border: none;
+    padding: 8px 30px;
+    text-transform: uppercase;
+
+
+}
+h1{
+    color: rgb(202, 14, 14); 
+    font-size: 50px;
+    font-weight: 800;
+    margin: 10px 0px;
+    font-family: 'Julius Sans One', sans-serif;  
+}
+.title{
+    font-size: 50px;
+    font-weight: 100;
+    margin:0px;
+}
+
+/* Botones */
+
+.btn:hover{
+    background-image:url(./assets/porrejgh.jpg);
+    color: black;
+}
+.btn-contact{
+    box-shadow: 1px 1px 10px 1px rgba(68, 67, 67, 0.5);
+
+}
+
+.btn-primary{
+ background-color: rgb(33, 34, 114); 
+ color: white;
+
+}
+.btn-description{
+    border-radius: 30px;
+    margin-left: 10px;
+    padding: 15px 40px;
+
+}
+
+/* Listas */
+
+.list-item a{
+    color: black;
+    font-weight: 200;
+
+}
+.link-hover:hover{
+    color:rgb(240, 149, 96);
+}
+
+.nav .nav-list .list-item{
+    display: inline;
+    margin-right: 25px;
+
+}
+
+/* Header */
+.header{
+    box-shadow: 0px 5px 10px rgb(209, 209, 209);
+    font-size: 20px;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+
+}
+.header .nav-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    height: 90px;
+
+}
+
+.header.bg-primary{
+    background-image: url(./assets/dalee.png);
+}
+                                       /* Main */
+/* About-me  */
+
+.about-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 0px;
+}
+.about-bgprimary{
+background-color: #dcf38a;
+} 
+
+.card-image img{
+    height: 400px;
+    width:70%;
+}
+
+.card-image{
+    padding-left:100px;
+}
+
+.card-info{
+    justify-content: flex-start;
+    padding-left: 70px;
+}
+.description {
+    font-size: 25px;
+    margin: 0px 0px 15px 10px;
+}
+
+/* Resources */
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 650px;
+    padding:100px;
+}
+.grid-bgprimary{
+    background-color: #eefdb8;
+}
+.box-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-resources img{
+    max-width: 50%;
+
+}
+.box-resources{
+    padding-top: 30px;
+
+}
+.box{
+    border: 2px solid rgb(233, 230, 230);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    margin: 10px 10px;
+}
+.box-animation:hover{
+    box-shadow: 1px -1px 20px 2px rgba(0, 0, 0, 0.2);
+    transition-duration: 500ms;
+}
+.box a{
+    color:rgb(33, 34, 114);
+}
+.box-bg{
+    background-color:white;
+}
+
+/* Quote */
+
+.card-quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 570px;
+}
+.quote-bg{
+    background-color: rgb(201, 235, 80);
+}
+.section-quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.section-quote cite{
+    margin-top: 30px;
+}
+.section-quote p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* Projects */
+.box-project img{
+    max-width: 70%;
+}
+
+/* Contact */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+}
+.contact-bgimage{
+    background-image: url(./assets/porrejgh.jpg);
+
+}
+.contact-wrapper{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    display: flex;
+    padding: 60px 90px;
+    
+
+}
+.card-contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 70px;
+
+}
+.card-contact p{
+    margin: 15px 0px 10px;
+}
+.contact-bgcolor{
+    background-color: rgb(250, 211, 250);
+}
+
+/* Form */
+
+.card-form{
+    display: flex;
+    flex-direction: column;
+
+}
+.control-inline{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+
+.title-form{
+    font-size: 50px;
+    margin: 0px;
+}
+.control-group {
+    margin-top: 15px;
+
+}
+.control-flex{
+    display: flex;
+}
+
+.label{
+    margin: 5px 0px;
+}
+
+.label-control{
+    display: flex;
+    flex-direction: column;
+}
+.control{
+    border-radius: 5px;
+    padding: 5px;
+    border-color: whitesmoke;
+}
+.control-email{
+    padding-right: 198px;
+}
+.control-text{
+    padding-right: 131px;
+    margin-bottom: 3px;
+}
+input, textarea{
+    background-color: whitesmoke;
+}
+
+/* Icon  */
+
+.icon-appearance{
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 7px;
+}
+.icon-contact{
+    color: rgb(41, 43, 150);
+}
+
+.icon-hover:hover{
+    background-image: url(./assets/porrejgh.jpg);
+    transition: 500ms;
+    color:white;
+}
+.icon-footer{
+    background-color: #fdc6fd;
+    color: rgb(41, 43, 150);
+    margin-left: 15px;
+
+}
+.icon-footer:hover{
+    color: whitesmoke;
+    background-color: rgb(41, 43, 150);
+    transition: 500ms;
+}
+
+/* Footer */
+
+.wrapper-footer p{
+   font-size: 15px;
+   margin-top: 40px;
+}
+
+.wrapper-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 70px 50px;
+
+}
+.list-footer .list-item{
+    display: inline;
+    margin-left: 15px;
+    text-transform: uppercase;
+
+}
+
+.card-socialmedia{
+    margin-top: 30px;
+}
+.bg-footer{
+    background-color: #e1f0ac;
+}
+
+/* Media Querys */
+
+@media(max-width:1200px){
+    .header{
+        display: none;
+    }
+
+}
+
+@media (max-width:900px){
+    .card-image img{
+        width: 90%;
+
+    }
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .about-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .control-flex{
+        display: flex;
+        display: block;
+        flex-direction: column;
+        
+    }
+    .card-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        
+    }
+    .card-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    } 
+    .card-form h2{
+        margin-right: 80px;
+    }
+    .control-inline{
+        margin-left: 0px;
+    }
+    .control-email, .control-text{
+        padding-right: 0px;
+    }
+}
+ @media (max-width:600px){
+    .contact-wrapper{
+        overflow: hidden; 
+        
+    } 
+    .card-contact{
+        padding-left: 50px;
+    }
+    
+}
